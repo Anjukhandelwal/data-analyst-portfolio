@@ -6,71 +6,9 @@
    ============================================================ */
 
 
-/* ============================================================
-   1. DATA CLEANING & TYPE CONVERSION
-   ------------------------------------------------------------
-   Convert text columns into correct data types:
-   - Dates (DD/MM/YYYY → YYYY-MM-DD)
-   - Numeric fields (sales, quantity, profit, etc.)
-   - Discount cleaning (20% → 0.20)
-   ============================================================ */
-
-CREATE TABLE superstore_data AS
-SELECT
-    CAST(row_id AS INTEGER) AS row_id,
-    order_id,
-
-    /* Convert DD/MM/YYYY → YYYY-MM-DD */
-    DATE(
-        substr(order_date, 7, 4) || '-' ||
-        substr(order_date, 4, 2) || '-' ||
-        substr(order_date, 1, 2)
-    ) AS order_date,
-
-    DATE(
-        substr(ship_date, 7, 4) || '-' ||
-        substr(ship_date, 4, 2) || '-' ||
-        substr(ship_date, 1, 2)
-    ) AS ship_date,
-
-    Ship_Mode,
-    customer_id,
-    customer_name,
-    segment,
-    country_region,
-    city,
-    state_province,
-    CAST(postal_code AS INTEGER) AS postal_code,
-    region,
-    product_id,
-    category,
-    sub_category,
-    product_name,
-
-    /* Numeric conversions */
-    CAST(sales AS REAL) AS sales,
-    CAST(quantity AS INTEGER) AS quantity,
-
-    /* Discount cleaning */
-    CASE
-        WHEN discount LIKE '%\%%' ESCAPE '\'
-            THEN CAST(REPLACE(discount, '%', '') AS REAL) / 100
-        WHEN discount = '' OR discount IS NULL
-            THEN NULL
-        ELSE CAST(discount AS REAL)
-    END AS discount,
-
-    CAST(profit AS REAL) AS profit,
-    CAST(delivery_days AS INTEGER) AS delivery_days,
-    CAST(profit_margin AS REAL) AS profit_margin,
-    CAST(discount_impact AS REAL) AS discount_impact
-
-  FROM sample__superstore_clean;
-
-
 
 /* ============================================================
-   2. DATA VALIDATION CHECKS
+   1. DATA VALIDATION CHECKS
    ------------------------------------------------------------
    Ensure data quality after cleaning.
    ============================================================ */
@@ -96,7 +34,7 @@ WHERE ship_date < order_date;
 
 
 /* ============================================================
-   3. CORE ANALYSIS QUERIES
+   2. CORE ANALYSIS QUERIES
    ------------------------------------------------------------
    Business insights: sales, profit, trends, categories, regions
    ============================================================ */
@@ -151,7 +89,7 @@ ORDER BY discount;
 
 
 /* ============================================================
-   4. OPTIONAL: DATA FOR POWER BI
+   3. DATA FOR POWER BI
    ------------------------------------------------------------
    Pre-aggregated tables for dashboards.
    ============================================================ */
