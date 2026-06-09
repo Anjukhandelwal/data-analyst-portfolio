@@ -1,84 +1,191 @@
-📊 Sales Performance Analysis — Power BI Dashboard
-Overview
-This project analyzes sales, profit, customer behaviour, and product performance using the Superstore dataset.
-The dashboard is divided into three pages, each focusing on a different business dimension.
+📊 Sales Performance Dashboard
+
+Power BI | SQL | Excel | DAX | Data Storytelling
 ******************************
-🟦 Page 1 — Executive Summary
-Key Features:
+📘 Project Summary
 
-Total Sales, Total Profit, Quantity KPIs
+This project presents a complete Sales Performance Analysis using the Superstore dataset.
+It follows an end‑to‑end analytics workflow — from raw data exploration and cleaning to SQL validation and a fully interactive 3‑page Power BI dashboard.
 
-Monthly Sales Trend
+The dashboard provides insights into:
 
-Sales by Category
+Overall sales and profit performance
 
-Business Insights:
+Customer behaviour and profitability
 
-Technology leads overall revenue
+Product category and sub‑category trends
 
-Sales trend shows seasonal peaks
+Delivery efficiency and operational performance
+
+This project demonstrates strong skills in data cleaning, SQL analysis, DAX, data modelling, and dashboard design.
 ******************************
-🟩 Page 2 — Customer Analysis
-Key Features:
 
-Sales by Segment
+📂 End‑to‑End Project Workflow
 
-Profit by Segment
+1️⃣ Raw Data Understanding
 
-Top 10 Customers by Sales
+Explored the Superstore dataset (10K+ rows, 21 columns)
 
-Bottom 10 Customers by Profit
+Identified key fields: Sales, Profit, Quantity, Category, Customer, Region, Dates
 
-Customer Profitability Scatter Plot
+Checked for missing values, duplicates, and incorrect data types
 
-Business Insights:
+2️⃣ Data Cleaning (Excel + Power Query)
 
-Consumer segment drives majority of sales
+Removed duplicates and fixed inconsistent formatting
 
-Corporate segment delivers highest profit margin
+Standardised date formats and text fields
 
-Some customers generate high sales but low profit due to discounting
+Corrected category/sub‑category naming issues
+
+Validated numerical fields (Sales, Profit, Quantity)
+
+Prepared a clean dataset for SQL and Power BI
+
+3️⃣ Data Validation (Excel)
+
+Used Pivot Tables to cross‑check totals
+
+Verified Sales = Quantity × Unit Price
+
+Checked Profit = Sales – Cost
+
+Ensured no negative or unrealistic values
+
+Confirmed category and segment mappings
+
+4️⃣ SQL Analysis
+
+Performed deeper analysis using SQL queries:
+
+Total Sales, Profit, Quantity
+
+Sales by Category & Sub‑Category
+
+Customer segmentation
+
+Top/Bottom customers
+
+Monthly sales trends
+
+Delivery performance metrics
+
+SQL helped validate the data and extract insights before dashboard creation.
+
+5️⃣ Power BI Modelling
+
+Loaded cleaned dataset into Power BI
+
+Created a Date Table using DAX
+
+Built relationships between tables
+
+Created DAX measures:
+
+Total Sales
+
+Total Profit
+
+Profit Margin
+
+Avg Delivery Days
+
+YoY/MoM metrics 
+
+6️⃣ Power BI Dashboard Development
+
+Built a 3‑page interactive dashboard:
+
+Page 1: Executive Summary
+
+Page 2: Customer Analysis
+
+Page 3: Product Analysis
+
+Used slicers, tooltips, conditional formatting, and clean visual design.
+
+7️⃣ Insights & Storytelling
+
+Summarised key findings across:
+
+Sales trends
+
+Customer behaviour
+
+Product performance
+
+Delivery efficiency
+
+Provided actionable recommendations for business improvement.
+
 ******************************
-🟧 Page 3 — Product Analysis
-Key Features:
 
-Sales by Category (Treemap)
+📸 Dashboard Screenshots
 
-Profit by Sub‑Category
+Page 1 — Executive Summary
 
-Top 10 Products by Sales
+<img width="1647" height="929" alt="Page 1" src="https://github.com/user-attachments/assets/341cd5e2-7e16-468f-b830-faeef7f10025" />
 
-Top 10 Products by Profit
+Page 2 — Customer Analysis
 
-Delivery Days Trend
+<img width="1642" height="918" alt="Page 2" src="https://github.com/user-attachments/assets/2215ee85-3b88-44d6-b6d3-7066412e7958" />
 
-Business Insights:
+Page 3 — Product Analysis
 
-Technology products dominate both sales and profit
+<img width="1649" height="922" alt="Page 3" src="https://github.com/user-attachments/assets/4ab86e22-eb84-4ca2-a526-289226299eb0" />
 
-Furniture sub‑categories show negative profit due to discounts
+
+******************************
+
+🧠 Key Insights
+
+Sales & Profit
+
+Total Sales: 2.25M
+
+Total Profit: 292K
+
+Technology is the highest‑performing category
+
+Customer Behaviour
+
+Consumer segment drives the most sales
+
+Corporate segment delivers the highest profit margin
+
+Some customers generate high sales but low profit due to discounts
+
+Product Performance
+
+Chairs, Phones, and Storage are top sellers
+
+Furniture sub‑categories show negative profit due to discounting
 
 Delivery performance is stable with minor seasonal variations
 ******************************
 🛠 Tools Used
-Power BI
 
-Excel
+Power BI (Dashboard, DAX, Modelling)
 
-SQL
+SQL (Analysis & Validation)
 
-DAX
+Excel (Cleaning & Validation)
+
+Power Query (Transformations)
 ******************************
 📁 Project Structure
+
 Code
 Project-1-Sales-Analysis/
-│
+
 ├── data/
 ├── excel/
 ├── sql/
 ├── powerbi/
+├── screenshots/
 └── README.md
 ******************************
+
 📥 Download Dashboard
 
 The Power BI file is available in the powerbi folder.
