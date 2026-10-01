@@ -24,7 +24,7 @@ By analyzing over 7,000 customer accounts using \*\*PostgreSQL\*\*, \*\*Power BI
 
 
 
-\## 🎯 Business Problem \& Objectives
+\## 🎯 Business Problem & Objectives
 
 High customer acquisition costs (CAC) make customer retention the primary driver of subscription profitability. Leadership lacked visibility into:
 
