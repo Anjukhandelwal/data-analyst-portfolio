@@ -53,3 +53,6 @@ dashboards/                      Power BI file and screenshots
 
 ## Check the first-12-months figure
 <img width="1461" height="860" alt="image" src="https://github.com/user-attachments/assets/6d8965a2-dd82-421f-9977-9cb19cb59053" />
+
+<img width="1460" height="884" alt="image" src="https://github.com/user-attachments/assets/b0211f86-98b7-4fc3-967c-83ea6b6d52bf" />
+
