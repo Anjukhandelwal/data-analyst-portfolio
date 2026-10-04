@@ -1,0 +1,21 @@
+dimension,check,Clean,Raw,raw_minus_clean
+Accuracy,Second pump arrived before first pump,2296,2296,0
+Completeness,Missing DateOfCall,0,0,0
+Completeness,Missing FirstPumpArriving_AttendanceTime,18654,18654,0
+Completeness,Missing IncGeo_BoroughName,0,0,0
+Completeness,Missing IncidentNumber,0,0,0
+Completeness,Missing Latitude,221855,221313,-542
+Completeness,Missing Longitude,221855,221313,-542
+Consistency,Rows with borough spelling/case variants,0,0,0
+Consistency,Unexpected IncidentGroup values,0,0,0
+Consistency,Year of DateOfCall differs from CalYear,0,0,0
+Uniqueness,Fully duplicated rows,0,0,0
+Uniqueness,Repeated IncidentNumber,0,0,0
+Validity,Coordinates outside Greater London box,0,542,542
+Validity,Dates in the future,0,0,0
+Validity,FirstPumpArriving_AttendanceTime over 60 min (review),0,0,0
+Validity,Hour outside 0-23,0,0,0
+Validity,Negative FirstPumpArriving_AttendanceTime,0,0,0
+Validity,Negative SecondPumpArriving_AttendanceTime,0,0,0
+Validity,SecondPumpArriving_AttendanceTime over 60 min (review),0,0,0
+Validity,Unparseable dates,0,0,0

@@ -1,0 +1,13 @@
+step,rows_changed,why
+Trim whitespace in text columns,300525,Prevents the same value being counted as two categories (count = cells changed)
+Standardise borough names,0,One spelling per borough so grouping and joins work
+Parse DateOfCall to datetime,358338,Explicit YYYY-MM-DD parsing; real dates allow time-based analysis
+Drop fully duplicated rows,0,Exact copies add no information and inflate counts
+Drop repeated IncidentNumber (keep first),0,"One row per incident; TODO: confirm repeats were true duplicates, not different records"
+Set coordinates outside the UK to missing,542,"Cannot be a real LFB location (e.g. 0,0 or swapped values); the incident is kept"
+Flag coordinates outside Greater London box (kept),0,"LFB can attend incidents just outside London, so these may be genuine; TODO: inspect before deciding"
+Set negative FirstPumpArriving_AttendanceTime to missing,0,A negative travel time is impossible
+Flag FirstPumpArriving_AttendanceTime over 60 min,0,"Could be a real long response, so kept and flagged for review"
+Set negative SecondPumpArriving_AttendanceTime to missing,0,A negative travel time is impossible
+Flag SecondPumpArriving_AttendanceTime over 60 min,0,"Could be a real long response, so kept and flagged for review"
+Flag second pump arriving before first,2296,"Logically impossible but cause unknown, so flagged for review instead of changed"
