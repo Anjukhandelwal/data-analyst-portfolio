@@ -1,18 +1,75 @@
-# Data Analyst Portfolio – Anju Khandelwal
+# 📁 Data Analyst Portfolio – Anju Khandelwal
 
-Junior data analyst based in London. I come from a software and localisation testing background, so I treat data the way I treated software: check it, question it, and make sure it can be trusted before drawing conclusions. Trained through the Primed Talent Data Analyst Bootcamp.
+Junior Data Analyst based in London.  
+I come from a **software and localisation testing background**, so I treat data the same way I treated software:  
+**check it, question it, validate it — and only then trust it for insights.**
 
-**Tools:** SQL · Python (Pandas) · Excel · Power BI · Tableau
+Trained through the **Primed Talent Data Analyst Bootcamp**.
 
-## Projects
+---
 
-| Project | What it covers | Tools |
-|---|---|---|
-| [Project 1: Sales Performance Analysis](Project-1-Sales-Analysis) | Analysing sales performance, from data preparation through to dashboards and screenshots | Excel, SQL, Power BI |
-| [Project 2: Customer Churn & Retention](Project-2-Customer-Churn-Retention) | Understanding customer churn and retention using the Telco Customer Churn dataset | SQL, Python, dashboards |
-| [Project 3: Data Cleaning & Validation – London Fire Brigade Incident Records](Project-3-Data-Cleaning-Validation) | Can 358,338 London Fire Brigade incident records be trusted for response-time reporting, and what had to be fixed? | Python, SQL |
+## 🛠️ Tools & Skills
+- SQL  
+- Python (Pandas)  
+- Excel  
+- Power BI  
+- Tableau  
+- Data Cleaning & Validation  
+- Exploratory Data Analysis  
+- Dashboarding & Reporting  
 
-Each project folder has its own README covering the question, data, approach and findings.
+---
 
-## Contact
-[LinkedIn](https://www.linkedin.com/in/anju-khandelwal-266a757a/)
+## 📊 Projects Overview
+
+### **📈 Project 1: Sales Performance Analysis**  
+**What it covers:**  
+- Sales performance trends  
+- Data preparation  
+- KPI reporting  
+- Interactive dashboards  
+
+**Tools:** Excel · SQL · Power BI  
+**Project Link:**  
+👉 [Sales Performance Analysis](https://github.com/Anjukhandelwal/data-analyst-portfolio/tree/main/Project-1-Sales-Analysis)
+
+---
+
+### **🔁 Project 2: Customer Churn & Retention**  
+**What it covers:**  
+- Churn rate analysis  
+- Revenue impact  
+- High‑risk customer segmentation  
+- Power BI dashboards  
+
+**Tools:** SQL · Python · Power BI  
+**Project Link:**  
+👉 [Customer Churn & Retention](https://github.com/Anjukhandelwal/data-analyst-portfolio/tree/main/Project-2-Customer-Churn-Retention)
+
+---
+
+### **🚒 Project 3: Data Cleaning & Validation – London Fire Brigade Incident Records**  
+**What it covers:**  
+- Data quality assessment  
+- Completeness, validity, consistency checks  
+- Cleaning strategy with logged decisions  
+- Before/after validation scorecard  
+
+**Tools:** Python · SQL  
+**Project Link:**  
+👉 [LFB Data Cleaning & Validation](https://github.com/Anjukhandelwal/data-analyst-portfolio/tree/main/Project-3-Data-Cleaning-Validation)
+
+---
+
+Each project folder contains its own **README** covering:
+- Business question  
+- Dataset  
+- Approach  
+- Findings  
+- Tools  
+- How to run  
+
+---
+
+## 📬 Contact  
+👉 [LinkedIn Profile](https://www.linkedin.com/in/anju-khandelwal-266a757a/)
