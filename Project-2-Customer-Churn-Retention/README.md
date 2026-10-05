@@ -98,5 +98,42 @@ Two‑page interactive dashboard:
 - **Customer Risk Profiler:** segment‑level churn risk, high‑value at‑risk customers, tenure distribution  
 
 ---
+\## 📂 Repository Structure
 
-## 📁 Repository Contents  
+
+
+```text
+
+Project-2-Customer-Churn-Retention/
+
+├── README.md
+
+├── data/
+
+│   ├── raw\_customer\_data.csv
+
+│   └── cleaned\_customer\_data.csv
+
+├── sql/
+
+│   ├── 01\_data\_cleaning.sql
+
+│   ├── 02\_cohort\_analysis.sql
+
+│   └── 03\_rfm\_segmentation.sql
+
+├── python/
+
+│   └── exploratory\_data\_analysis.ipynb
+
+└── dashboards/
+
+   ├── customer\_churn\_dashboard.pbix
+
+   └── screenshots/
+
+      ├── 01\_executive\_summary.png
+
+      └── 02\_customer\_risk\_profiler.png
+
+
